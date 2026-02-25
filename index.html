@@ -29,7 +29,7 @@
     .section4 { background-color: #fddde6; }
     .section5 { background-color: #ffffff; }
 
-    img, iframe {
+    img {
       display: block;
       margin: auto;
     }
@@ -37,6 +37,8 @@
     table {
       margin: auto;
     }
+
+    /* Video styling removed to keep original aspect ratio */
   </style>
 </head>
 
@@ -57,10 +59,15 @@
 The initial product line will include lip glosses, tinted balms, lightweight foundations/skin tints, and simple eye products.</p>
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbfyVy8BUs680cKkxEDeLzinXQw5RT7aPSBQ&s" 
-style="width:500px;height:600px;border:5px solid hotpink;">
+style="width:500px;height:600px;border:5px solid hotpink;"> <!-- Inline CSS -->
 
-<iframe width="560" height="315" src="https://youtu.be/x_kD3IUQpX0" title="YouTube video player" 
-  frameborder="0" allowfullscreen></iframe>
+<!-- Fixed video embed -->
+<div style="text-align:center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/x_kD3IUQpX0" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+</div>
+
 </div>
 
 <!-- Container 3 -->
@@ -105,10 +112,6 @@ Our mission is to create beauty without boundaries.
 
 <!-- Container 4 -->
 <div class="container section4">
-<footer style="background-color:#ffb6c1; padding:10px;">
-&copy; 2026 T.L Cosmetics. All rights reserved.
-</footer>
-
 <p>We release new shades every season for makeup lovers everywhere.<br>
 Our lip glosses stay glossy and moisturizing throughout the day.<br>
 Foundations help achieve smooth skin with even coverage every time.<br>
