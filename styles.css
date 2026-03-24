@@ -1,5 +1,4 @@
-/* External CSS */
-
+/* ===== HEADINGS ===== */
 h1 {
   color: #d63384;
 }
@@ -12,6 +11,146 @@ h3 {
   color: #ad1457;
 }
 
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+nav ul {
+  list-style: none;
+  background: hotpink;
+  padding: 12px;
+  margin: 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* ===== CONTAINERS ===== */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* ===== TEXT ===== */
+p {
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== COLUMNS ===== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+/* ===== IMAGES ===== */
+img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== TABLE ===== */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffb6c1;
+}
+
+tr:hover {
+  background-color: #ffe6f0;
+}
+
+/* ===== LISTS ===== */
+.main-list {
+  list-style: none;
+  padding: 0;
+}
+
+.main-list > li {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+.main-list ul {
+  list-style: circle;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* ===== BUTTON ===== */
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: hotpink;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d63384;
+}
+
+/* ===== FOOTER ===== */
 footer {
+  background: hotpink;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
   letter-spacing: 1px;
 }
