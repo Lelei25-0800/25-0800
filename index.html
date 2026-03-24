@@ -1,279 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>T.L Cosmetics</title>
+<meta charset="UTF-8">
+<title>T.L Cosmetics</title>
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 
-  <!-- Internal CSS -->
-  <style>
-    body {
-      background-color: #ffe6f0; /* Background colour */
-      text-align: center; /* Center content */
-      font-family: Arial, sans-serif;
-    }
+<style>
+body {
+  background-color: #ffe6f0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
-    .container {
-      width: 85%;
-      margin: auto;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 12px;
-    }
+/* NAVBAR */
+nav ul {
+  list-style: none;
+  background: hotpink;
+  padding: 10px;
+}
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .section1 { background-color: #ffffff; }
-    .section2 { background-color: #fddde6; }
-    .section3 { background-color: #ffffff; }
-    .section4 { background-color: #fddde6; }
-    .section5 { background-color: #ffffff; }
+/* CONTAINERS */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-    img {
-      display: block;
-      margin: auto;
-    }
+.section1 { background-color: #ffffff; }
+.section2 { background-color: #fddde6; }
+.section3 { background-color: #ffffff; }
+.section4 { background-color: #fddde6; }
+.section5 { background-color: #ffffff; }
 
-    table {
-      margin: auto;
-    }
+/* COLUMNS */
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+}
 
-    /* Video styling removed to keep original aspect ratio */
-  </style>
+/* MEDIA */
+img {
+  width: 200px;
+  height: 250px;
+  border: 3px solid hotpink;
+  margin: 10px;
+}
+
+/* TABLE */
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+}
+th {
+  background-color: pink;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  border-radius: 8px;
+  background: hotpink;
+  color: white;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: hotpink;
+  color: white;
+  padding: 10px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- Container 1 -->
+<!-- NAVBAR -->
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<!-- SECTION 1 -->
 <div class="container section1">
 <h1>This website is about T.L Cosmetics</h1>
-<h2>T.L Cosmetics is a youth-driven makeup brand. It’s dedicated to providing affordable makeup products.</h2>
+<h2>Youth-driven, affordable makeup brand</h2>
 </div>
 
-<!-- Container 2 -->
+<!-- SECTION 2 -->
 <div class="container section2">
 <h3>Our Vision</h3>
-<h4>Products Designed for Creativity and Inclusivity</h4>
+<p>Creative, inclusive and clean beauty products.</p>
 
-<p>As a 19-year-old founder, the vision is to create a brand that blends clean ingredients, creative expression, and inclusivity. 
-The initial product line will include lip glosses, tinted balms, lightweight foundations/skin tints, and simple eye products.</p>
+<!-- 5 IMAGES -->
+<img src="https://via.placeholder.com/200" alt="product">
+<img src="https://via.placeholder.com/200" alt="product">
+<img src="https://via.placeholder.com/200" alt="product">
+<img src="https://via.placeholder.com/200" alt="product">
+<img src="https://via.placeholder.com/200" alt="product">
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbfyVy8BUs680cKkxEDeLzinXQw5RT7aPSBQ&s" 
-style="width:500px;height:600px;border:5px solid hotpink;"> <!-- Inline CSS -->
-
-<!-- Fixed video embed -->
-<div style="text-align:center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/x_kD3IUQpX0" title="YouTube video player" 
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen></iframe>
+<!-- 5 VIDEOS -->
+<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
 </div>
 
-</div>
-
-<!-- Container 3 -->
+<!-- COLUMNS -->
 <div class="container section3">
-<p><b>T.L Cosmetics ensures every product is affordable, safe, and empowering for young individuals exploring their creativity with confidence.</b></p>
-
-<p><u>Our brand focuses on inclusivity, providing products suitable for diverse skin tones and styles, making makeup accessible to everyone around the world.</u></p>
-<p><u>Clean ingredients and high quality are always prioritized to ensure safety, comfort, and long-lasting effects for all makeup enthusiasts everywhere.</u></p>
-
-<p>Water boils at 100<sup>o</sup>C.</p>
-<p>The sun is approximately 93 million miles away<sup>1</sup>.</p>
-<p>Our foundation comes with SPF 15<sup>+</sup> to protect your skin.</p>
-<p>This lip gloss is our newest edition version 2<sup>nd</sup>.</p>
-
-<p>H<sub>2</sub>O is the chemical formula for water.</p>
-<p>CO<sub>2</sub> is released when we exhale.</p>
-<p>All our skincare products are water-based H<sub>2</sub>O formulas.</p>
-<p>Some balms contain vitamin B<sub>12</sub> for healthy lips.</p>
-
-<p><del>This is old product packaging.</del></p>
-<p><del>Prices have increased last year.</del></p>
-<p><del>This shade was discontinued.</del></p>
-<p><del>The previous logo was different.</del></p>
-
-<p><mark>New lip glosses are highly pigmented and moisturizing.</mark></p>
-<p><mark>Foundations now come in twelve inclusive shades.</mark></p>
-<p><mark>Tinted balms provide subtle and natural color.</mark></p>
-<p><mark>Eye products are easy to use for beginners and experts.</mark></p>
-
-<p>"Makeup is an art, not just a routine."</p>
-<p>"Beauty should be accessible for everyone, everywhere."</p>
-<p>"We believe in expressing yourself creatively with confidence."</p>
-<p>"Sustainability and clean ingredients are part of our mission."</p>
-
-<blockquote>
-Makeup is a tool of self-expression and joy.<br>
-It empowers individuals to embrace creativity and uniqueness.<br>
-Everyone deserves access to safe and inclusive products.<br>
-Our mission is to create beauty without boundaries.
-</blockquote>
+<div class="row">
+<div class="column">
+<h3>Products</h3>
+<p>Lip gloss, foundation, balms.</p>
+</div>
+<div class="column">
+<h3>Mission</h3>
+<p>Inclusivity and affordability.</p>
+</div>
 </div>
 
-<!-- Container 4 -->
+<p><b>Affordable and empowering makeup.</b></p>
+<p><u>Inclusive for all skin tones.</u></p>
+<p><mark>High quality products.</mark></p>
+<p><del>Old packaging removed.</del></p>
+<p>Water boils at 100<sup>°</sup>C</p>
+</div>
+
+<!-- LISTS -->
 <div class="container section4">
-<p>We release new shades every season for makeup lovers everywhere.<br>
-Our lip glosses stay glossy and moisturizing throughout the day.<br>
-Foundations help achieve smooth skin with even coverage every time.<br>
-Tinted balms add subtle color enhancing natural beauty effortlessly.</p>
-
-<hr>
-<p>T.L Cosmetics always experiments with innovative colors for products.</p>
-<hr>
-<p>All products undergo strict quality control to ensure customer satisfaction.</p>
-<hr>
-<p>Our community feedback helps us improve and design better items.</p>
-
-<pre>
-Our products are cruelty-free and safe for all skin types.
-We always prioritize clean ingredients in every formula.
-Inclusivity is at the heart of our cosmetic vision.
-</pre>
-</div>
-
-<!-- Container 5 -->
-<div class="container section5">
 <ul>
-  <li>Lip Gloss</li>
-  <li>Tinted Balm</li>
-  <li>Foundation</li>
+<li>Face Products
+<ul>
+<li>Foundation</li>
+<li>Concealer</li>
+<li>Powder</li>
+<li>Primer</li>
+<li>Setting Spray</li>
 </ul>
+</li>
 
-<ol>
-  <li>Create inclusive shades</li>
-  <li>Focus on quality</li>
-  <li>Listen to customers</li>
-</ol>
-
+<li>Lip Products
 <ul>
-  <li>Face Products
-    <ul>
-      <li>Foundation</li>
-      <li>Concealer</li>
-    </ul>
-  </li>
-  <li>Lip Products
-    <ul>
-      <li>Lip Gloss</li>
-      <li>Tinted Balm</li>
-    </ul>
-  </li>
+<li>Lip Gloss</li>
+<li>Tinted Balm</li>
+<li>Lipstick</li>
+<li>Lip Oil</li>
+<li>Lip Liner</li>
+</ul>
+</li>
 </ul>
 </div>
 
-<!-- TABLE LEFT EXACTLY HOW IT WAS (NO CONTAINER) -->
-<table border="1">
-  <caption>T.L Cosmetics Product Table</caption>
-  <tr>
-    <th>Product</th>
-    <th>Shade</th>
-    <th>Price</th>
-    <th>Volume</th>
-    <th>SPF</th>
-    <th>Vegan</th>
-    <th>Rating</th>
-    <th>Stock</th>
-  </tr>
-  <tr>
-    <td rowspan="2">Lip Gloss</td>
-    <td>Rose</td>
-    <td>$8</td>
-    <td>10ml</td>
-    <td>5</td>
-    <td>Yes</td>
-    <td>4.5</td>
-    <td>Available</td>
-  </tr>
-  <tr>
-    <td>Berry</td>
-    <td>$8</td>
-    <td>10ml</td>
-    <td>5</td>
-    <td>Yes</td>
-    <td>4.6</td>
-    <td>Available</td>
-  </tr>
-  <tr>
-    <td>Tinted Balm</td>
-    <td>Peach</td>
-    <td>$10</td>
-    <td>12ml</td>
-    <td>10</td>
-    <td>No</td>
-    <td>4.7</td>
-    <td>Available</td>
-  </tr>
-  <tr>
-    <td>Foundation</td>
-    <td>Fair</td>
-    <td>$15</td>
-    <td>30ml</td>
-    <td>15</td>
-    <td>Yes</td>
-    <td>4.8</td>
-    <td>Low Stock</td>
-  </tr>
-  <tr>
-    <td>Foundation</td>
-    <td>Medium</td>
-    <td>$15</td>
-    <td>30ml</td>
-    <td>15</td>
-    <td>Yes</td>
-    <td>4.9</td>
-    <td>Low Stock</td>
-  </tr>
-  <tr>
-    <td>Foundation</td>
-    <td>Dark</td>
-    <td>$15</td>
-    <td>30ml</td>
-    <td>15</td>
-    <td>Yes</td>
-    <td>5.0</td>
-    <td>Available</td>
-  </tr>
-  <tr>
-    <td>Concealer</td>
-    <td>Fair</td>
-    <td>$12</td>
-    <td>15ml</td>
-    <td>10</td>
-    <td>Yes</td>
-    <td>4.7</td>
-    <td>Available</td>
-  </tr>
-  <tr>
-    <td>Concealer</td>
-    <td>Medium</td>
-    <td>$12</td>
-    <td>15ml</td>
-    <td>10</td>
-    <td>Yes</td>
-    <td>4.8</td>
-    <td>Low Stock</td>
-  </tr>
-  <tr>
-    <td>Powder</td>
-    <td>Translucent</td>
-    <td>$14</td>
-    <td>20g</td>
-    <td>5</td>
-    <td>No</td>
-    <td>4.6</td>
-    <td>Available</td>
-  </tr>
-  <tr>
-    <td>Powder</td>
-    <td>Beige</td>
-    <td>$14</td>
-    <td>20g</td>
-    <td>5</td>
-    <td>No</td>
-    <td>4.7</td>
-    <td>Low Stock</td>
-  </tr>
+<!-- TABLE 1 -->
+<table>
+<caption>Products</caption>
+<tr><th>Product</th><th>Price</th></tr>
+<tr><td>Lip Gloss</td><td>$8</td></tr>
+<tr><td>Foundation</td><td>$15</td></tr>
 </table>
+
+<!-- TABLE 2 -->
+<table>
+<caption>Reviews</caption>
+<tr><th>Name</th><th>Rating</th></tr>
+<tr><td>Anna</td><td>5</td></tr>
+<tr><td>Mary</td><td>4</td></tr>
+</table>
+
+<!-- FORM -->
+<div class="container section5">
+<form>
+<input type="text" placeholder="Name"><br><br>
+<input type="email" placeholder="Email"><br><br>
+<textarea placeholder="Message"></textarea><br><br>
+<button>Submit</button>
+</form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>&copy; 2026 T.L Cosmetics</p>
+</footer>
 
 </body>
 </html>
