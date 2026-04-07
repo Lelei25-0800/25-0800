@@ -5,92 +5,6 @@
 <title>T.L Cosmetics</title>
 
 <link rel="stylesheet" href="styles.css">
-
-<style>
-body {
-  background-color: #ffe6f0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-/* NAVBAR */
-nav ul {
-  list-style: none;
-  background: hotpink;
-  padding: 10px;
-}
-nav ul li {
-  display: inline;
-  margin: 15px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* CONTAINERS */
-.container {
-  width: 85%;
-  margin: auto;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.section1 { background-color: #ffffff; }
-.section2 { background-color: #fddde6; }
-.section3 { background-color: #ffffff; }
-.section4 { background-color: #fddde6; }
-.section5 { background-color: #ffffff; }
-
-/* COLUMNS */
-.row {
-  display: flex;
-}
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-
-/* MEDIA */
-img {
-  width: 200px;
-  height: 250px;
-  border: 3px solid hotpink;
-  margin: 10px;
-}
-
-/* TABLE */
-table {
-  margin: auto;
-  border-collapse: collapse;
-}
-td, th {
-  border: 1px solid black;
-  padding: 8px;
-}
-th {
-  background-color: pink;
-}
-
-/* BUTTON */
-button {
-  padding: 10px;
-  border-radius: 8px;
-  background: hotpink;
-  color: white;
-  border: none;
-}
-
-/* FOOTER */
-footer {
-  background: hotpink;
-  color: white;
-  padding: 10px;
-}
-</style>
 </head>
 
 <body>
@@ -118,18 +32,18 @@ footer {
 <p>Creative, inclusive and clean beauty products.</p>
 
 <!-- 5 IMAGES -->
-<img src="https://www.google.com/imgres?q=t.l%20cosmetics&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100064319253426&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Ftlcosmeticsllc%2F&docid=9Yzb32R9jb3GkM&tbnid=oyCLll0RrWbZwM&vet=12ahUKEwiWyIfEzrqTAxXShP0HHZlDMFwQnPAOegQIFxAB..i&w=960&h=960&hcb=2&ved=2ahUKEwiWyIfEzrqTAxXShP0HHZlDMFwQnPAOegQIFxAB" alt="product">
+<img src="https://via.placeholder.com/200" alt="product">
 <img src="https://via.placeholder.com/200" alt="product">
 <img src="https://via.placeholder.com/200" alt="product">
 <img src="https://via.placeholder.com/200" alt="product">
 <img src="https://via.placeholder.com/200" alt="product">
 
 <!-- 5 VIDEOS -->
-<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
 </div>
 
 <!-- COLUMNS -->
@@ -196,10 +110,16 @@ footer {
 <!-- FORM -->
 <div class="container section5">
 <form>
-<input type="text" placeholder="Name"><br><br>
-<input type="email" placeholder="Email"><br><br>
-<textarea placeholder="Message"></textarea><br><br>
-<button>Submit</button>
+<label>Name:</label><br>
+<input type="text" required><br><br>
+
+<label>Email:</label><br>
+<input type="email" required><br><br>
+
+<label>Message:</label><br>
+<textarea required></textarea><br><br>
+
+<button type="submit">Submit</button>
 </form>
 </div>
 
