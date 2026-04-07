@@ -1,51 +1,30 @@
-/* ===== HEADINGS ===== */
-h1 {
-  color: #d63384;
-}
-
-h2 {
-  color: #c2185b;
-}
-
-h3 {
-  color: #ad1457;
-}
-
-/* ===== BODY ===== */
+/* BODY */
 body {
+  background-color: #ffe6f0;
+  text-align: center;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav ul {
   list-style: none;
   background: hotpink;
-  padding: 12px;
-  margin: 0;
-  border-radius: 10px;
-  text-align: center;
+  padding: 10px;
 }
-
 nav ul li {
   display: inline;
   margin: 15px;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
 }
-
 nav ul li a:hover {
   text-decoration: underline;
-  opacity: 0.8;
 }
 
-/* ===== CONTAINERS ===== */
+/* CONTAINERS */
 .container {
   width: 85%;
   margin: auto;
@@ -53,104 +32,69 @@ nav ul li a:hover {
   margin-bottom: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
 }
 
-.container:hover {
-  transform: scale(1.02);
-}
+.section1 { background-color: #ffffff; }
+.section2 { background-color: #fddde6; }
+.section3 { background-color: #ffffff; }
+.section4 { background-color: #fddde6; }
+.section5 { background-color: #ffffff; }
 
-/* ===== TEXT ===== */
-p {
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* ===== COLUMNS ===== */
+/* COLUMNS */
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-
 .column {
   flex: 50%;
   padding: 10px;
 }
 
-/* ===== IMAGES ===== */
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+/* MEDIA */
 img {
+  width: 200px;
+  height: 250px;
+  border: 3px solid hotpink;
+  margin: 10px;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== TABLE ===== */
+/* TABLE */
 table {
   margin: 20px auto;
   border-collapse: collapse;
-  width: 80%;
 }
-
 td, th {
   border: 1px solid black;
-  padding: 10px;
-  text-align: center;
+  padding: 8px;
 }
-
 th {
-  background-color: #ffb6c1;
+  background-color: pink;
 }
 
-tr:hover {
-  background-color: #ffe6f0;
-}
-
-/* ===== LISTS ===== */
-.main-list {
-  list-style: none;
-  padding: 0;
-}
-
-.main-list > li {
-  background: white;
-  margin: 10px auto;
-  padding: 15px;
-  border-radius: 10px;
-  width: 60%;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  font-weight: bold;
-}
-
-.main-list ul {
-  list-style: circle;
-  margin-top: 10px;
-  text-align: left;
-}
-
-/* ===== BUTTON ===== */
+/* BUTTON */
 button {
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 8px;
   background: hotpink;
   color: white;
   border: none;
-  cursor: pointer;
-  transition: 0.3s;
 }
-
 button:hover {
-  background: #d63384;
+  background: deeppink;
+  cursor: pointer;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   background: hotpink;
   color: white;
-  padding: 12px;
-  margin-top: 20px;
-  letter-spacing: 1px;
+  padding: 10px;
 }
