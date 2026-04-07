@@ -24,20 +24,22 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* CONTAINERS */
+/* CONTAINERS (NOW MORE VISIBLE) */
 .container {
   width: 85%;
   margin: auto;
   padding: 20px;
   margin-bottom: 25px;
   border-radius: 12px;
+  border: 2px solid hotpink;   /* ✅ ADDED BORDER */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* DIFFERENT SECTION COLORS (STRONGER) */
 .section1 { background-color: #ffffff; }
-.section2 { background-color: #fddde6; }
+.section2 { background-color: #ffd1dc; } /* stronger pink */
 .section3 { background-color: #ffffff; }
-.section4 { background-color: #fddde6; }
+.section4 { background-color: #ffc0cb; } /* stronger pink */
 .section5 { background-color: #ffffff; }
 
 /* COLUMNS */
