@@ -4,7 +4,76 @@
 <meta charset="UTF-8">
 <title>T.L Cosmetics</title>
 
-<link rel="stylesheet" href="styles.css">
+<style>
+body {
+  background-color: #ffe6f0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav ul {
+  list-style: none;
+  background: hotpink;
+  padding: 10px;
+}
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* CONTAINERS */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border: 2px solid hotpink;
+}
+
+.section1 { background-color: #ffffff; }
+.section2 { background-color: #ffd1dc; }
+.section3 { background-color: #ffffff; }
+.section4 { background-color: #ffc0cb; }
+.section5 { background-color: #ffffff; }
+
+/* IMAGES */
+img {
+  width: 200px;
+  height: 250px;
+  border: 3px solid hotpink;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  border-radius: 8px;
+  background: hotpink;
+  color: white;
+  border: none;
+}
+button:hover {
+  background: deeppink;
+}
+
+/* FOOTER */
+footer {
+  background: hotpink;
+  color: white;
+  padding: 10px;
+}
+</style>
 </head>
 
 <body>
@@ -12,114 +81,63 @@
 <!-- NAVBAR -->
 <nav>
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Products</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
-<!-- SECTION 1 -->
-<div class="container section1">
-<h1>This website is about T.L Cosmetics</h1>
-<h2>Youth-driven, affordable makeup brand</h2>
+<!-- HOME -->
+<div id="home" class="container section1">
+<h1>Welcome to T.L Cosmetics 💄</h1>
+<p>Youth-driven, affordable makeup brand.</p>
 </div>
 
-<!-- SECTION 2 -->
-<div class="container section2">
-<h3>Our Vision</h3>
-<p>Creative, inclusive and clean beauty products.</p>
+<!-- PRODUCTS -->
+<div id="products" class="container section2">
+<h1>Our Products 💄</h1>
 
-<!-- 5 IMAGES -->
-<img src="https://via.placeholder.com/200" alt="product">
-<img src="https://via.placeholder.com/200" alt="product">
-<img src="https://via.placeholder.com/200" alt="product">
-<img src="https://via.placeholder.com/200" alt="product">
-<img src="https://via.placeholder.com/200" alt="product">
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
 
-<!-- 5 VIDEOS -->
-<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
-<iframe width="200" height="120" src="https://www.youtube.com/embed/x_kD3IUQpX0"></iframe>
+<p>Lip gloss, foundation, concealer and more.</p>
 </div>
 
-<!-- COLUMNS -->
-<div class="container section3">
-<div class="row">
-<div class="column">
-<h3>Products</h3>
-<p>Lip gloss, foundation, balms.</p>
-</div>
-<div class="column">
-<h3>Mission</h3>
-<p>Inclusivity and affordability.</p>
-</div>
+<!-- ABOUT -->
+<div id="about" class="container section3">
+<h1>About Us 💕</h1>
+<p>T.L Cosmetics is built on inclusivity and affordability.</p>
+<p>We believe beauty should empower confidence.</p>
 </div>
 
-<p><b>Affordable and empowering makeup.</b></p>
-<p><u>Inclusive for all skin tones.</u></p>
-<p><mark>High quality products.</mark></p>
-<p><del>Old packaging removed.</del></p>
-<p>Water boils at 100<sup>°</sup>C</p>
+<!-- GALLERY -->
+<div id="gallery" class="container section4">
+<h1>Gallery 📸</h1>
+
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
 </div>
 
-<!-- LISTS -->
-<div class="container section4">
-<ul>
-<li>Face Products
-<ul>
-<li>Foundation</li>
-<li>Concealer</li>
-<li>Powder</li>
-<li>Primer</li>
-<li>Setting Spray</li>
-</ul>
-</li>
+<!-- CONTACT -->
+<div id="contact" class="container section5">
+<h1>Contact Us 📩</h1>
 
-<li>Lip Products
-<ul>
-<li>Lip Gloss</li>
-<li>Tinted Balm</li>
-<li>Lipstick</li>
-<li>Lip Oil</li>
-<li>Lip Liner</li>
-</ul>
-</li>
-</ul>
-</div>
-
-<!-- TABLE 1 -->
-<table>
-<caption>Products</caption>
-<tr><th>Product</th><th>Price</th></tr>
-<tr><td>Lip Gloss</td><td>$8</td></tr>
-<tr><td>Foundation</td><td>$15</td></tr>
-</table>
-
-<!-- TABLE 2 -->
-<table>
-<caption>Reviews</caption>
-<tr><th>Name</th><th>Rating</th></tr>
-<tr><td>Anna</td><td>5</td></tr>
-<tr><td>Mary</td><td>4</td></tr>
-</table>
-
-<!-- FORM -->
-<div class="container section5">
 <form>
 <label>Name:</label><br>
-<input type="text" required><br><br>
+<input type="text"><br><br>
 
 <label>Email:</label><br>
-<input type="email" required><br><br>
+<input type="email"><br><br>
 
 <label>Message:</label><br>
-<textarea required></textarea><br><br>
+<textarea></textarea><br><br>
 
-<button type="submit">Submit</button>
+<button>Send</button>
 </form>
 </div>
 
